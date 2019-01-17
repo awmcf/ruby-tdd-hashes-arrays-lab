@@ -14,3 +14,13 @@ def favourite_food_true(person, food)
   end
   return false
 end
+
+def add_friend(person, friend)
+  person[:friends] << friend
+  person[:friends].length()
+end
+
+def remove_friend(person, friend)
+  person[:friends].delete(friend)
+  person[:friends].length()
+end
