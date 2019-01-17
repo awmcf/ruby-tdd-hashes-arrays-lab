@@ -24,3 +24,11 @@ def remove_friend(person, friend)
   person[:friends].delete(friend)
   person[:friends].length()
 end
+
+def total_money(array)
+  money = 0
+  for person in array
+    money += person[:monies]
+  end
+  return money
+end
